@@ -402,6 +402,75 @@ The orchestrator's resume prompt should include: _"Check ~/.agent-memory/index.m
 
 ---
 
+# Research Thread Tracking
+
+For research and conceptual discussions (not routine implementation), an answer
+to one question routinely spawns several sub-questions. Following one loses the
+others, and verbose answers make it hard to come back. This mechanism captures
+every branch so none is lost and any can be resumed later.
+
+## Threads vs. tickets
+
+A **ticket** is a unit of *work*. A **thread** is an open *question* — a line of
+inquiry that would expand understanding. A thread may graduate into a ticket
+when it becomes work; a ticket may spawn threads. They are tracked separately.
+
+## Thread ID Scheme
+
+`T-` prefix, zero-padded, monotonic, never reused (e.g. `T-004`). Independent of
+the `O-/R-/E-/D-` ticket counters.
+
+## The Ledger — `threads.md` (project root, parallel to `plan.md`)
+
+Threads form a **tree** — every thread records its parent, so its place in the
+inquiry is always visible. One thread per entry:
+
+```markdown
+### T-004 · How do we determine the "Rome-ness" of an activation?
+
+**Status:** open
+**Parent:** T-002
+**Opened:** 2026-08-04
+**Question:** IIA condition 1 (encoded in SOURCE) assumes we can tell an
+activation carries the location variable. By what measure? (probe? DLA? logit
+lens projection?)
+**Answer:** — (link to findings/notes when resolved)
+```
+
+Thread statuses:
+
+- **open** — identified, not yet explored
+- **active** — currently being followed
+- **answered** — resolved; answer linked to a findings entry or notes file
+- **parked** — was active, set aside deliberately; MUST remain resumable
+- **dropped** — abandoned on purpose; record one line of why
+
+## The Threads Block (end of every branching research answer)
+
+When an answer opens or touches multiple threads, end the answer with a compact
+block — the index, not more prose, is the antidote to verbosity:
+
+```
+Threads
+- ACTIVE  → T-004 · determining "Rome-ness" of an activation
+- opened  → T-005 · how to verify what BASE downstream actually consumes
+            T-006 · "downstream consumption is itself a kind of neighbour"
+- parked  → T-002 · the two conditions for an IIA flip
+            T-003 · why mismatched-layer patches collapse IIA
+```
+
+## Rules
+
+1. **Never silently drop a thread.** If a branch surfaces mid-answer, it gets a
+   `T-` id in the ledger even if we do not follow it now.
+2. **The user chooses the next thread.** Present the menu; do not auto-pick.
+3. **One sentence per ledger line.** Terseness is the whole point.
+4. **Always record the parent** so the tree is navigable.
+5. **Parked ≠ dropped.** A parked thread must carry enough context to resume cold.
+6. At session end, open + parked threads are the resume point — surface them.
+
+---
+
 ## Discipline Rules
 
 1. Never mark a ticket closed without recording its artifacts.
