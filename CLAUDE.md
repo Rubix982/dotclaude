@@ -471,6 +471,104 @@ Threads
 
 ---
 
+# Research Design Protocol
+
+Design is the CONVERGENT step between an open question and the work. `threads.md`
+diverges (what don't we understand?); tickets execute (do the thing); design sits
+between and decides *which tickets should exist at all*. Skipping design means
+running experiments looking for results — the failure mode to avoid. Applies to
+any non-trivial research/design question BEFORE opening implement tickets or
+running experiments.
+
+## The design lenses
+
+Pass every research question through these ten lenses, **in order**. Each is a
+question you must force-answer; the answers ARE the design. The order is a
+workflow, not a checklist: establish it is *worth doing and not already taken*,
+*then* pin the claim, *then* design a clean measurement, *then* bound the effort,
+*then* stress-test. A question that has not passed the lenses is not ready to build.
+
+### WHY — is it worth doing at all?
+
+1. **Significance** — So what? Who benefits, and what *concretely* changes if the
+   answer is yes versus no? If you cannot name what a confirmed result AND a denied
+   result each change, the question is not worth designing. Rigor on a question
+   nobody cares about is wasted rigor.
+2. **Prior art & positioning** — What already exists, how does this differ in one
+   sentence, and who is *actively* working on it (scoop risk)? Also: which datasets,
+   models, and metrics should you adopt so your results are comparable to prior
+   work? Do the literature search HERE (Asta, Semantic Scholar, ask an LLM) — before
+   designing, not after. Prevents re-deriving a published result and being scooped.
+
+### WHAT — what exactly is the claim?
+
+3. **Completeness** — What sibling questions must also be answered for THIS answer
+   to be *believed*? One result is an anecdote; the family is a study. The family
+   defines the experiment set.
+4. **Falsification** — What result would prove you WRONG? State confirm / deny /
+   null outcomes in advance. If nothing could falsify it, it is not a hypothesis —
+   it is a foregone conclusion. Pre-stating the null is what stops post-hoc
+   rationalisation.
+
+### HOW — can you measure it cleanly?
+
+5. **Method & construct validity** — Two parts. (a) Enumerate EVERY method that
+   could measure this; pick one; record the ones you are deferring and WHY (the
+   reviewer trail). (b) Construct validity: does the chosen measure actually capture
+   the construct you claim? ("Does cosine-at-layer *really* mean the facts are
+   close?") Measuring the wrong thing precisely is still wrong.
+6. **Confounds & controls** — What else co-varies with your independent variable?
+   Name each confound and its control. An uncontrolled confound is a dead result —
+   a reviewer names it and the finding evaporates.
+7. **Baseline** — What is the dumbest explanation that could produce your result,
+   and does your claim beat it? The real claim is usually "X predicts Y *after
+   removing* the obvious baseline." No baseline = no result.
+
+### HOW MUCH — can you actually do it?
+
+8. **Scope & feasibility** — Two parts. (a) What is IN v1 and what is explicitly
+   DEFERRED to v2? Bound the effort before starting, not after it overruns.
+   (b) Feasibility: can you run it within your real compute / data / time budget
+   (queue limits, dataset availability, hardware)? A complete design you cannot
+   execute is not a design.
+
+### CHECK — would it survive contact?
+
+9. **Deliverable** — What is the ONE figure or number that carries the claim? Design
+   backward from it; every experiment must serve producing it. Prevents collecting
+   data with no destination.
+10. **Adversary** — What would a hostile expert reviewer attack, and what is your
+    pre-emption for each? Simulate the reviewer before the reviewer simulates you.
+    This lens consumes the others: weak baseline (7)? uncontrolled confound (6)?
+    cherry-picked setting? underpowered n? Answer each before it is asked.
+
+## Where the output lives
+
+The PASS is mandatory; the FILE is optional. For a small question the answers live
+inline (in `plan.md`, a thread, or the ticket). For a full research project they
+live in a `design.md` at project root (parallel to `plan.md`), structured by the
+lenses. "No file yet" is never an excuse to skip the thinking.
+
+## Rules
+
+1. **Converge before you build.** No implement ticket opens and no experiment runs
+   until its question has passed the lenses. (Research-shaped sibling of "no work
+   without a ticket.")
+2. **The WHY gate is a stop condition.** If Significance (1) or Prior art (2) fails
+   — the question is trivial, already answered, or a scoop-in-progress — STOP. Do
+   not design further. The cheapest place to kill a bad project is before it starts.
+3. **No orphan experiments.** Every experiment must trace to a hypothesis (4) and
+   serve the deliverable (9). If it serves neither, cut it.
+4. **Record what you rejected.** Deferred methods (5) and known threats (10) are
+   written down, not left implicit. Silence on them reads as "did not consider it."
+5. **Design is iterative.** Results reshape the design; re-pass the affected lenses
+   after each major result rather than treating the design as frozen.
+6. **A wrong design decision is revisited, not buried.** When a choice proves wrong
+   mid-project, note what broke and why (RCA-style), then change it — the same
+   discipline as re-opening a ticket.
+
+---
+
 ## Discipline Rules
 
 1. Never mark a ticket closed without recording its artifacts.
