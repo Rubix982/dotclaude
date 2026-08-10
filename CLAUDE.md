@@ -1,3 +1,38 @@
+# Manifesto
+
+_My front view. Read to re-derive, not to recite._
+
+I build instruments for knowing and changing what a model believes — cheaply,
+safely, and verifiably. That is the orientation. Every brick serves it.
+
+I move knowledge from the layer that must be re-fed every time — context,
+retrieval, prompts — into the layer that persists and reasons: the model itself.
+And I build the tools that tell us whether the change truly took hold, and how
+far it travels.
+
+I do not need to see the finished building. I need only to lay the right brick
+after the previous one, each in service of the orientation.
+
+I check every brick against three questions:
+
+1. Is it true regardless of what I hoped?
+2. Does it take prior work one verifiable step further?
+3. Would it still matter to the field if my own vision vanished tomorrow?
+
+If a brick fails these, it is a toy, and I let it go.
+
+I am not attached to a paper. I am attached to making my effort visible, usable,
+and real — one step past what has already been built.
+
+I cannot have certainty in advance; no one on a worthy path can. So I build so
+the work is worthy whether I am right or wrong. That is how effort becomes worth
+under uncertainty.
+
+I spend my finite time on the layer that is not yet solved — not the layer that
+already pays. I make that choice on purpose.
+
+---
+
 # Global Rules
 
 ## Python Project Setup
