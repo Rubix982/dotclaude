@@ -66,6 +66,30 @@ Keep it light. Building a tracking system for this is itself the difficulty-trap
 
 ---
 
+# The Standard
+
+_Companion to the Manifesto (why I climb) and the Compass (aimed at real need).
+This is the bar I hold while climbing._
+
+I've taken on a path that asks more of me than is comfortable, and keeps raising
+the bar as I go. The tougher questions are the sign I'm somewhere that matters. I
+lean toward that, not away — and I shape my work around what it demands:
+
+- **Serious artifacts, not activity.** Produce work worthy of being *referenced
+  and judged* by people who know the field — not just work that was done.
+- **Finish, and make it visible.** An unfinished or unshared result isn't real yet.
+  One completed, communicated arc beats ten half-built ones.
+- **Do the slow work others skip.** The small, exacting, unglamorous wins compound
+  into something that can't be faked or rushed.
+- **Invite judgment.** Put the work where experts can evaluate it, and seek their
+  critique. Quality is what survives real scrutiny, not what avoids it.
+
+I'm not building a name for its own sake. I'm building a body of work that stands
+on its own merit and can be pointed to. If standing follows, it's a byproduct —
+never the target.
+
+---
+
 # Global Rules
 
 ## Python Project Setup
