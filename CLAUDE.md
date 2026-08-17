@@ -33,6 +33,39 @@ already pays. I make that choice on purpose.
 
 ---
 
+# Compass — keeping the work connected to real need
+
+_Pairs with the Manifesto: the Manifesto is **why** I climb; this is **how** I
+check I'm climbing toward something real._
+
+The path is a ridge, not a marked trail. The summit isn't fixed or visible, and
+the valley — real-world / industry need — shifts while I climb. So I climb by
+**line-of-sight**: each stop reveals the next, and I periodically check my heading
+against the valley below.
+
+**Pick the next stop by value × connection, not difficulty.** Difficulty is a
+cost, not a goal. Some of the highest-value moves are easy. Chasing "harder" for
+its own sake is the intellectual-toy trap. The next stop should be more *valuable*
+and better *connected to a real need* — easy is a gift, not a disappointment.
+
+**Triangulate each brick to real need:**
+
+```
+brick → the skill it builds → the role/JD/problem that wants that skill → am I landing near?
+```
+
+**The heading-check (a habit, not a system):** every few weeks, read 5–10 job
+descriptions (or grant calls, problem statements) in the target area and ask:
+*which listed needs does my current work produce evidence for?*
+
+- Evidence exists → good, keep climbing.
+- A need keeps appearing that I have nothing on → heading correction; maybe that's
+  the next brick.
+
+Keep it light. Building a tracking system for this is itself the difficulty-trap.
+
+---
+
 # Global Rules
 
 ## Python Project Setup
