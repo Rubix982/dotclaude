@@ -563,11 +563,141 @@ Threads
 
 ---
 
+# Premise Dry-Run
+
+_The generative step. `threads.md` asks what I don't understand; the dry-run
+produces the reframe worth designing around; the Design Protocol converges it;
+tickets execute. Skipping it means designing around the first framing I happened
+to arrive at, which is almost never the best one available._
+
+Run it by **sitting with the premise and walking it, in prose, before touching
+code or lenses.** Not brainstorming and not note-taking — a deliberate attempt to
+find the structure underneath an intuition I already trust. The multi-chain move,
+the expansion/contraction reframe, and the sign error in a live metric spec were
+all only reachable this way; none of them would have come from reading the code
+or filling in a template.
+
+Trigger it when: an intuition keeps recurring but stays a metaphor; a result is
+about to be designed around a framing nobody has stress-tested; two of my own
+documents disagree and I can't say which is right; or the work feels correct but
+uninteresting (usually means the frame is too close to the surface).
+
+**Stuck-and-hard vs stuck-and-flat.** These call for opposite responses and are
+easy to confuse. Stuck-and-hard means I lack information — go get it. Stuck-and-
+flat means the frame is *excluding* something I already have, and more
+information will not help; the corrective is not missing, it is suppressed by a
+one-sided framing. Flatness, not difficulty, is the dry-run's signal.
+
+## The moves
+
+Not a checklist — nine operations that reliably pay. Take whichever bite.
+
+### REFRAME — is the framing the best one available?
+
+1. **Find the structure under the intuition.** When something is "obviously worse"
+   or "clearly harder," ask *why* and refuse to stop at the metaphor. The answer is
+   usually a structural property, and naming it makes the intuition measurable.
+   _("Reverse jenga is worse" -> grounds are conjunctive, consequences are not.)_
+2. **Rename into an existing formalism.** Check whether my novel distinction is a
+   known one under another name. This is a gain, not a loss: it inherits decades of
+   results instead of restating an observation, and it is the difference between a
+   contribution and a re-derivation.
+   _(forward/backward -> expansion/contraction, which imports AGM wholesale.)_
+3. **Invert the difficulty.** Actively ask what happens if the hard direction is
+   the easy one. The direction that *sounds* intractable often has a natural
+   stopping condition the "easy" one lacks — and finding that is what makes an
+   instrument buildable at all. **The difficulty judgment is usually a property
+   of the frame, not the problem**, which gives the move a trigger: inversion
+   pays in proportion to how committed I have been to one direction. The more
+   settled the difficulty feels, the more likely it is a projection of the frame
+   that produced it.
+
+### OPERATIONALIZE — does the reframe produce work?
+
+4. **Turn the asymmetry into an independent variable.** A reframe that doesn't
+   yield a per-item quantity I can vary is still a metaphor. Push until it names a
+   number and a predicted direction.
+5. **Run the mirror, don't re-derive.** If a published result establishes X in one
+   direction/regime, the mirror is usually unrun and is not re-derivation. Say
+   explicitly which published finding I am mirroring, so the distinction survives
+   review.
+6. **Replace enumeration with measurement.** Wherever I am hand-writing the set I
+   intend to measure, I have built in circularity. Look for a causal or
+   interventional definition that *discovers* the set instead. This is often the
+   move that dissolves the blocking problem rather than working around it.
+
+### AUDIT — what does the new frame break?
+
+7. **Separate structural from incidental.** Ask whether the failure belongs to the
+   specific artifact or to its whole class. Class-level claims are stronger,
+   falsifiable in one shot, and usually the real result.
+8. **Re-run my own specs against the new frame.** A reframe silently invalidates
+   things I already wrote down. Go back and check sign conventions, success
+   criteria, and control-vs-signal assignments — a metric can be exactly inverted
+   and still look reasonable until the frame changes.
+9. **Salvage the reason from anything I cut.** When an idea is cut for good cause
+   (usually scope), check whether the intuition that motivated it survives on its
+   own. Keep the epistemology, drop the machinery. Same for banned words: ban the
+   word, re-house the content it was carrying. **Vehemence is the marker:** what
+   I cut most decisively, with the most moral energy, is the likeliest to be
+   carrying something I still need. Sort the cut list by how sure I was.
+
+## Where the output lives
+
+Prose, in the answer or a session note. The PASS is what matters; a file is
+optional and usually premature. Every dry-run ends with a **Threads block** — the
+moves generate branches faster than anything else I do, and rule 1 of thread
+tracking applies with full force.
+
+## Rules
+
+1. **Dry-run before designing, not after.** The Design Protocol converges on a
+   frame; if the frame was never stress-tested, the ten lenses will polish the
+   wrong thing rigorously.
+2. **The intuition is data, the metaphor is not the finding.** Jenga, chains, and
+   trees earn their place only by being cashed out into structure (move 1).
+3. **Prefer the reframe that makes the work smaller.** If the new frame implies
+   fewer experiments or removes a dependency, that is the strongest signal it is
+   right. Difficulty is a cost (see Compass).
+4. **Hold generative tension; do not resolve on schedule.** Distinguish tensions
+   that *block* work (resolve now) from tensions that are *producing* (hold).
+   Two coherent readings giving opposite answers on the same quantity is often
+   not a defect to adjudicate but the pair whose held tension yields a third
+   position neither contained. Forcing the choice destroys it. Deadlines are a
+   bad reason to collapse a contradiction that is still generating.
+5. **Record what the reframe broke.** Move 8 findings go in writing, RCA-style —
+   a silently corrected spec looks like it was never wrong.
+6. **These frames govern how I think, never what I claim.** Depth-psychology and
+   philosophy-of-science vocabulary belongs to the *method* layer. It must not
+   cross into claims about a system under study — an LM has no unconscious, and
+   a structural resemblance between a measured phenomenon and a psychological
+   one is a false friend that explains nothing and costs credibility. When the
+   analogy feels too good not to use in a talk, that is the signal to cut it.
+   If a lineage must be cited, cite the defensible spine — Peirce on abduction
+   as a distinct inferential mode, Polanyi on tacit knowledge, Bachelard on the
+   epistemological obstacle — and keep the rest for myself.
+7. **A dry-run may conclude the question is not worth designing.** That is a
+   success, and it is cheaper here than at the WHY gate.
+8. **This protocol is subject to its own moves.** A nine-move method I trust is
+   prior knowledge grown comfortable, which is Bachelard's obstacle wearing the
+   costume of a method. The dry-run does not *produce* breakthroughs; it removes
+   what blocks them — necessary, not sufficient. Concluding that the protocol is
+   itself the obstacle on some question, and that the right move is to skip it
+   and run the experiment, is a valid outcome. Beware also the reflexive case:
+   when the method mirrors its subject, every session generates instances of the
+   theory and confirmation comes free. That is a source of hypotheses with zero
+   evidential weight. The only check is external — a prediction someone else can
+   run that could come back negative.
+
+---
+
 # Research Design Protocol
 
 Design is the CONVERGENT step between an open question and the work. `threads.md`
-diverges (what don't we understand?); tickets execute (do the thing); design sits
-between and decides *which tickets should exist at all*. Skipping design means
+diverges (what don't we understand?); the **Premise Dry-Run** finds the framing
+worth converging on; tickets execute (do the thing); design sits between and
+decides *which tickets should exist at all*. Design the frame the dry-run
+produced, not the first one that came to hand. Skipping design means
 running experiments looking for results — the failure mode to avoid. Applies to
 any non-trivial research/design question BEFORE opening implement tickets or
 running experiments.
