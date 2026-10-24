@@ -90,6 +90,51 @@ never the target.
 
 ---
 
+# Side Builds — the deliberate exception
+
+_The Manifesto, Compass, and Standard govern the main climb. This is the one
+place I set them down on purpose._
+
+Some things I want to exist but have decided **not** to understand in depth. A
+side build is one of those: a creative or "this would be nice" project I build
+end-to-end by prompting Claude Code, with light oversight and no requirement
+that I master the details. Not understanding it is the point. My depth goes to
+the layer that is not yet solved; side builds let me still make things without
+spending that depth.
+
+**How a session becomes a side build:** I say "side build" (or the project lives
+under `~/code/open-concept-lab/`). When it does, the rules below replace the heavier
+protocols for that project.
+
+**What is switched OFF:**
+
+- No `plan.md`, `agents/`, tickets, CHANGELOG, `threads.md`, Premise Dry-Run, or
+  Design Protocol. None of the Discipline Rules apply.
+- No technical explanations unless I ask. Don't teach me the stack; tell me what
+  it does and how to use it.
+- Few questions. Pick sensible defaults, mention the important ones in a line,
+  and keep going. Ask only when the choice changes what I'd actually see or get.
+
+**What Claude still owns:**
+
+- **Finish end-to-end.** A side build is done when it runs and I can use it —
+  not when the code is written. Launch it and confirm it works before saying so.
+- **Plain-language handoff.** End with: what it is, how to run it, what's known
+  to be rough. Short.
+- **Basic hygiene, silently.** Own folder, venv for Python (Global Rules still
+  apply), a README with run instructions, git init so I can roll back.
+- **Flag anything with real-world consequence before doing it.** Because I'm
+  not reviewing the details, Claude is the safety check: money, accounts or API
+  keys, deleting or overwriting my files, publishing or deploying publicly,
+  handling other people's data. Stop and ask on these — every time.
+
+**Graduation:** If a side build turns into something I want to understand,
+defend, or point to as serious work, it graduates. Then the normal protocol
+applies from that point forward — starting with a Premise Dry-Run on what it
+has become.
+
+---
+
 # Global Rules
 
 ## Python Project Setup
@@ -494,7 +539,64 @@ The orchestrator's resume prompt should include: _"Check ~/.agent-memory/index.m
 
 ---
 
+# The Card — the default, and the width limit
+
+_Read this before the three protocols that follow it. Thread Tracking, the
+Premise Dry-Run, and the Design Protocol are for the rare question that deserves
+a week. The Card is for everything else, which is almost everything. Reaching for
+a heavy protocol on an ordinary question is how a week of thinking replaces a
+day of work._
+
+**One card open at a time.** Not one project, not one area — one card. A second
+idea that surfaces goes into `threads.md` as a single line and gets no further
+discussion in that sitting. Breadth is not curiosity; past a point it is
+avoidance wearing curiosity's clothes, and it is the failure mode I actually
+have. The cost is not wasted effort. It is that nothing ever closes, so nothing
+is ever read by anyone, so the work stays unjudged — which the Standard says
+makes it not real yet.
+
+A card that takes more than one sitting to fill is too big. Cut it until it fits.
+
+## The six fields
+
+1. **WHERE WE ARE.** The last thing established, as a number or a fact. Not a
+   project summary. One sentence.
+2. **WHAT WE ARE DOING.** One action, stated so a second person could carry it
+   out without asking. If it needs an "and", it is two cards.
+3. **WHY.** What is not known now that will be known after. If the answer is
+   "it would be good to have", there is no why and the card does not open.
+4. **WHAT IS AFFECTED.** Which existing claims, files, or numbers change if this
+   comes back either way — written *before* the work, so a silent invalidation
+   is impossible. (Same discipline as dry-run move 8, at one-card scale.)
+5. **CONCLUSION IF WE DO IT.** Both branches, in advance. *If X, we claim A. If
+   not-X, we claim B.* A card where only one branch has a consequence is not an
+   experiment, it is a hope.
+6. **CONSEQUENCE OF NOT DOING IT.** What breaks, stalls, or stays unknown if
+   this is skipped forever. If the honest answer is "nothing", close the card
+   unstarted. That is a success, and it is the cheapest one available.
+
+## The rules
+
+1. **One card open.** Enforced at the sitting, not the week.
+2. **A card closes with a number, or with a sentence that could have come out
+   the other way.** Never with "explored" or "built".
+3. **Field 6 is the one that kills cards.** Fill it honestly and most ideas die
+   there. That is the field doing its job — far cheaper than killing them after
+   the work.
+4. **Promotion is deliberate and rare.** A card escalates to the Design Protocol
+   only when field 4 says a load-bearing published claim is at stake, or field 5
+   says the two branches cost more than a week apart. Otherwise the ten lenses
+   are polish on a question that did not need them.
+5. **Where the card lives.** A `CARD.md` at project root, template at the top and
+   the live card below it. One file to open at the start of a sitting. Worked
+   instance: `ai/edit-slice/CARD.md`.
+
+---
+
 # Research Thread Tracking
+
+_Subordinate to **The Card**: the ledger is where a surfaced branch goes to be
+silent, not a menu to browse. Opening it mid-card is how one card becomes five._
 
 For research and conceptual discussions (not routine implementation), an answer
 to one question routinely spawns several sub-questions. Following one loses the
@@ -564,6 +666,9 @@ Threads
 ---
 
 # Premise Dry-Run
+
+_Reached for only when a card fails to fill — field 3 or field 5 keeps coming out
+empty — which is the flatness signal below. Not a standing step before work._
 
 _The generative step. `threads.md` asks what I don't understand; the dry-run
 produces the reframe worth designing around; the Design Protocol converges it;
@@ -692,6 +797,9 @@ tracking applies with full force.
 ---
 
 # Research Design Protocol
+
+_Entered only by promotion from a card (Card rule 4). An ordinary question does
+not earn ten lenses, and running them on one costs a week and buys polish._
 
 Design is the CONVERGENT step between an open question and the work. `threads.md`
 diverges (what don't we understand?); the **Premise Dry-Run** finds the framing
