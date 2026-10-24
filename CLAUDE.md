@@ -591,6 +591,44 @@ A card that takes more than one sitting to fill is too big. Cut it until it fits
    the live card below it. One file to open at the start of a sitting. Worked
    instance: `ai/edit-slice/CARD.md`.
 
+## The plain-words test
+
+**If I cannot explain it to someone in simple words, the research has no benefit.**
+This is a standing rule, not a style preference. An explanation I can only give in
+the field's vocabulary is one I may not have understood — jargon lets a sentence
+stay fluent while the understanding under it is missing, and nothing in the
+writing catches that.
+
+**But there is a false version of this rule, and it is the dangerous one.** Simple
+does not mean fewer qualifications. The test is not "is it short" but:
+
+> **Does the simpler version make the claim EASIER to prove wrong?**
+
+Worked instance. *"His profession fell by 5.19 nats"* — accurate, unfalsifiable by
+a reader, because they cannot picture a nat. *"The model went from 68.4% sure he
+was a painter to 0.38%"* — the same measurement, and now anyone can say "that is
+wrong." The plain version is **more** checkable, not less. That is a real
+simplification.
+
+If the simple version cannot be wrong, the content left with the jargon. Then the
+job is not to simplify further, it is to find the number the plain sentence should
+have carried.
+
+**Three things this rule does not license:**
+
+1. **Dropping a limit because it is awkward in plain speech.** "Delivery is not
+   effect" is plain. Say it.
+2. **Rounding a measured quantity into a vibe.** "Almost all of it" is simpler than
+   0.982 and it is worse, because 0.982 can be checked.
+3. **Removing a hedge the evidence requires.** Quarantine hedges in a limits
+   section, as the writing protocol says — do not delete them for readability.
+
+**The habit:** before a result goes anywhere, say it out loud in one plain sentence
+to an imagined non-specialist. If that sentence names something that could be
+observed to be false, the result is ready. If it does not, it is not ready, and the
+fix is upstream of the writing.
+
+
 ---
 
 # Research Thread Tracking
