@@ -1027,6 +1027,49 @@ At the same time, make the writing technically rigorous. Check whether the claim
 
 For technical documentation, prioritize accuracy, reproducibility, and clear instructions. The exploratory style of a research narrative doesn't need to carry over into a setup guide or API reference. Adapt the structure to the task without introducing unnecessary formality.
 
+## When a draft changes its mind more than once
+
+My research writing retraces how I got somewhere, so it concedes things as it goes.
+That is the part worth keeping. What goes wrong is not the concessions themselves but
+what they cost the reader when they stack up.
+
+**Keep a running total, and state it rather than making the reader carry it.** After
+two or three reversals a reader no longer knows which claim is still standing. They
+are not confused by any single sentence; they have lost the balance. So when a passage
+has turned over more than twice, stop and say in one plain sentence what survived and
+what did not, before going on. Not a summary of the argument — a statement of what is
+still mine to defend.
+
+**Evidence that does not depend on a concession goes BEFORE the concession, not
+after.** This is the ordering mistake that does the most damage and it is invisible
+from inside the draft. If I concede three things and then present my strongest
+evidence, that evidence reads as a rescue attempt, however good it is — and a hostile
+reader will say so. Presented first, the same evidence reads as the finding, and the
+concessions that follow read as limits on it. Nothing about the evidence changed. Check
+this explicitly: for each piece of evidence, ask whether it would still hold if every
+concession in the draft were true. If yes, it belongs earlier.
+
+**Chronology usually gives the right order here, so check whether the draft actually
+follows it.** The passage that prompted this rule had its oldest and most independent
+experiments last and its newest, most tentative ones first. Putting them back in the
+order they happened fixed the ordering problem and the rhetorical one at the same time.
+
+**A definite article pointing more than a paragraph or two back needs re-naming, not
+pointing.** "The gap", "the first table", "that effect" — if the thing was last named
+several paragraphs and two reversals ago, name it again. This costs five words and it
+is the difference between a reader following and a reader re-reading.
+
+**If I want to add a diagram to help a reader navigate my own prose, treat that as a
+finding about the prose.** The wish for a decision tree is usually a sign that too many
+branches are still live at once — which is an ordering problem, not a presentation
+problem. Fix the order first and count the branches again. A diagram that shows a
+mechanism is worth drawing; a diagram whose job is to rescue the reader from the
+paragraph order is a splint on a break that should be set.
+
+**None of this means cutting the reversals.** "I thought X, then the data said
+otherwise" is the most trustworthy thing in the draft and it stays. The fix is where
+each piece lands, and whether the reader is told the score.
+
 ## Personal and professional communication
 
 For personal writing, preserve the way I express myself. Don't turn a reflection into a motivational essay or conclude that every experience has taught me a lesson.
