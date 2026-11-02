@@ -1027,6 +1027,18 @@ At the same time, make the writing technically rigorous. Check whether the claim
 
 For technical documentation, prioritize accuracy, reproducibility, and clear instructions. The exploratory style of a research narrative doesn't need to carry over into a setup guide or API reference. Adapt the structure to the task without introducing unnecessary formality.
 
+## Reviewer-facing documents
+
+PR descriptions, test evidence pages, unit-test docs and tickets have one reader in mind: a reviewer deciding whether this change is correct. Write for that decision. Every point should help the reviewer judge the change. A point that only invites a question the reviewer cannot act on costs them time and slows the review.
+
+Keep the document scoped to the change. Show the tests that exercise the code I changed, and the coverage of the files I changed, not package totals or shared libraries the change does not touch. Show what works and how it was verified. Leave out gaps in code outside the change, internal caveats about how a test was run, and process notes such as rebase order. Those belong in my chat with you, not in the reviewer's document.
+
+Scope is not the same as overstating. Leaving a point out is fine. Saying something is tested when it is not, or implying more coverage than exists, is never fine. If a claim on the page needs a qualification to stay true, either keep the qualification or remove the claim.
+
+When output a reviewer will see contains something that looks alarming but is expected, such as ERROR lines logged by negative tests, either explain it in one line or show filtered output, so the reviewer does not stop on it.
+
+The research-writing rules above still apply to my own notes and findings. This section only changes what goes into documents meant for reviewers.
+
 ## Personal and professional communication
 
 For personal writing, preserve the way I express myself. Don't turn a reflection into a motivational essay or conclude that every experience has taught me a lesson.
