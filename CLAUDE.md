@@ -1025,6 +1025,22 @@ In particular:
 
 These aren't absolute bans. Any of these techniques can work in the right context. The problem is using them automatically, until the writing begins to sound like a template.
 
+### Don't end on a placeholder
+
+What I said on 15 November 2026, about *"and the ceiling is empty where it would matter"*:
+
+> The next thought any person thinks is — well, what matters? Why end so dramatically? Why put a period on a sentence like that? Why take time to hide and get to the point?
+
+The sentence holds its own content back by one sentence to make a beat. *Where it would matter* names nothing; the naming sits in the sentence after it. So my next thought is a question, and the question was manufactured by the writing rather than raised by the material.
+
+It is the self-justifying label turned around. That one puts an argument where a name belongs; this one puts a placeholder where the content belongs.
+
+**The fix is a merge, not a rewrite** — the next sentence almost always holds the missing noun, so move it in. Doing that to the sentence above made it one word shorter and asked me nothing:
+
+> The same algebra gives one universal ceiling. For a question that never names the edited subject, its median value sits above what a question that does name it actually receives, so the ceiling cannot tell those two questions apart and forbids nothing.
+
+**The tell is a demonstrative with no referent in its own sentence** — *that gap*, *where it matters*, *this is the point*, *and that is the result*.
+
 ### One chain, and the cost of compression
 
 I said this on 15 November 2026, about an abstract paragraph: we assume short snappy jumpy sentences are good for the average person, and they are not. We squash details into one place without realising that writing **more**, but simply, is better for everyone — provided it is organised in a readable order.
