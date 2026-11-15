@@ -1025,6 +1025,22 @@ In particular:
 
 These aren't absolute bans. Any of these techniques can work in the right context. The problem is using them automatically, until the writing begins to sound like a template.
 
+### One chain, and the cost of compression
+
+I said this on 15 November 2026, about an abstract paragraph: we assume short snappy jumpy sentences are good for the average person, and they are not. We squash details into one place without realising that writing **more**, but simply, is better for everyone — provided it is organised in a readable order.
+
+So read "prefer simple, precise sentences" as **short is good while it stays on one chain.** A short sentence that changes the subject is not clearer than a long one that stays put: I now have to join the pieces, and joining is harder than following.
+
+The failure mode is compression, and it looks like concision. Distinct ideas get squashed into adjacent units — a semicolon chain, a colon, a hedge folded into the claim — and the passage scores well on every sentence-level measure while being unreadable. The sentence that prompted this:
+
+> A single edit does two things, breaking the old answer and supplying the new one, and the two come apart: on one probe set under one metric they move in opposite directions.
+
+Three ideas and a scope limit in one sentence. Each is fine alone. Together they are a knot.
+
+**An abstract, a summary, or any opening carries one chain of thought and nothing else.** Each answer raises the next question. A list of results is not a chain, however true each item is — and *"four further results came off the same probe set"* is the sentence that admits a list is coming.
+
+When I say something is rushed or hard to follow, the fix is almost never to tighten it. Give it more room, keep every sentence simple, and put the parts in the order a reader would ask for them.
+
 ### Never let a label argue for itself
 
 Two sentences I was given on 15 November 2026, and could not at first name the fault in:
