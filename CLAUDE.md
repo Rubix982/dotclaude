@@ -259,6 +259,8 @@ open → in-progress → [blocked] → in-progress → closed
 - **in-progress** — actively being worked
 - **blocked** — waiting on another ticket or external input; blockers field must be filled
 - **closed** — done; artifacts recorded
+- **split** — grew past its scope mid-execution; `Split into:` names the children (see
+  Advanced Concepts). Never re-opened; it exists as a record of the split decision.
 - **re-opened** — was closed, found incomplete or broken; RCA required before resuming
 
 ---
@@ -941,7 +943,15 @@ lenses. "No file yet" is never an excuse to skip the thinking.
 
 1. Never mark a ticket closed without recording its artifacts.
 2. Never open a ticket without a description — "figure it out" is not a description.
-3. Blockers must reference a real ticket ID, not a vague concept.
+3. Blockers must reference a real ticket ID, not a vague concept — **except when the
+   blocker is outside the project**, in which case the field names the external fact and
+   points at the evidence for it. *"Blocked on nnsight 0.8.1's backward behaviour; see
+   `workspace/nnsight081_backward_repro.py`"* is a blocker. *"Blocked on the library"* is
+   the vague concept the rule exists to forbid. The test is whether a second engineer
+   could check the claim without asking. This clause was missing while the lifecycle
+   already said blocked means *"waiting on another ticket **or external input**"* — two
+   halves of this template disagreeing, which left a real ticket with `Blockers: none`
+   for three weeks because no honest form of the field existed.
 4. Shared surface entries are append-only. Old entries are never edited.
 5. An agent that touches another agent's workspace has broken the model.
 6. RCA is required on every re-open. No exceptions.
@@ -1014,6 +1024,41 @@ In particular:
 - Don't make every paragraph sound equally polished. Some ideas need more explanation than others.
 
 These aren't absolute bans. Any of these techniques can work in the right context. The problem is using them automatically, until the writing begins to sound like a template.
+
+### Never let a label argue for itself
+
+Two sentences I was given on 15 November 2026, and could not at first name the fault in:
+
+> PLAIN — the same paper, said so it can still be checked
+
+> The same paper, without the notation, in the order it actually happened. Seven sections: what I was trying to do, the point where I thought it had worked, …
+
+No human writes like this, or thinks like this. I would never see myself writing such sentences. What they do is name the thing and defend the thing in the same breath, answering an objection nobody raised, in the position where a name belongs. The first answers *is this the dumbed-down version?* The second recites a contents list for a page whose headings were visible underneath it.
+
+Both also claim a virtue the page already demonstrates, and that is worse than redundant. Telling me the work can be checked is weaker than letting me check it. **A sentence claiming what the artifact already shows is not adding a claim, it is admitting a doubt the artifact had not raised.**
+
+Two tests, in this order:
+
+1. **Say it aloud, to a person, about your own work.** If you wouldn't say it, don't write it. Most of this family is not a pattern, so nothing will catch it but the ear.
+2. **Delete the justifying clause.** If the label still names the thing, the clause was argument, not name. `PLAIN` names it. `In plain words` names it.
+
+The line between the two: **describe the contents and you are naming; assert the merit and you are arguing.** *"THREADS — how this paper was reached"* says what is in the tab and is fine. The one above says why the tab is good and is not.
+
+**Where to look.** Both instances were in the furniture — the label, the standfirst, the caption, the last sentence of a section. The body of a page has something to carry, so it carries it; furniture carries nothing, and what fills that gap is the document talking about itself. When prose feels machine-made, don't re-read the paragraphs. Read the furniture.
+
+One more, because the cause recurs: **an announcement of structure is what a document writes when its structure cannot be seen.** That second sentence got written because I said the page felt jumpy with no clear start — and the real fault was CSS, with the headings rendering as body text. Before adding a line that explains the arrangement, check whether the arrangement is missing or just not showing.
+
+## Research and technical writing
+
+When helping me write about research, preserve the distinction between what I observed, what I think might explain it, and what I can actually conclude.
+
+I value explanations that show how the evidence changed my understanding. If I tested an idea and it didn't hold up, keep that in the account when it matters. If the experiment has limitations, explain them in concrete terms rather than adding a generic disclaimer.
+
+Don't confuse a convincing narrative with a convincing result. A well-structured explanation cannot compensate for weak evidence.
+
+At the same time, make the writing technically rigorous. Check whether the claims follow from the results, whether different measurements are being conflated, and whether a reader could misunderstand what was tested. Point out missing information rather than filling it in with an assumption.
+
+For technical documentation, prioritize accuracy, reproducibility, and clear instructions. The exploratory style of a research narrative doesn't need to carry over into a setup guide or API reference. Adapt the structure to the task without introducing unnecessary formality.
 
 ## Research and technical writing
 
