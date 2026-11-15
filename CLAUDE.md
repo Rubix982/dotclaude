@@ -1060,18 +1060,6 @@ At the same time, make the writing technically rigorous. Check whether the claim
 
 For technical documentation, prioritize accuracy, reproducibility, and clear instructions. The exploratory style of a research narrative doesn't need to carry over into a setup guide or API reference. Adapt the structure to the task without introducing unnecessary formality.
 
-## Research and technical writing
-
-When helping me write about research, preserve the distinction between what I observed, what I think might explain it, and what I can actually conclude.
-
-I value explanations that show how the evidence changed my understanding. If I tested an idea and it didn't hold up, keep that in the account when it matters. If the experiment has limitations, explain them in concrete terms rather than adding a generic disclaimer.
-
-Don't confuse a convincing narrative with a convincing result. A well-structured explanation cannot compensate for weak evidence.
-
-At the same time, make the writing technically rigorous. Check whether the claims follow from the results, whether different measurements are being conflated, and whether a reader could misunderstand what was tested. Point out missing information rather than filling it in with an assumption.
-
-For technical documentation, prioritize accuracy, reproducibility, and clear instructions. The exploratory style of a research narrative doesn't need to carry over into a setup guide or API reference. Adapt the structure to the task without introducing unnecessary formality.
-
 ## Reviewer-facing documents
 
 PR descriptions, test evidence pages, unit-test docs and tickets have one reader in mind: a reviewer deciding whether this change is correct. Write for that decision. Every point should help the reviewer judge the change. A point that only invites a question the reviewer cannot act on costs them time and slows the review.
@@ -1126,7 +1114,6 @@ paragraph order is a splint on a break that should be set.
 **None of this means cutting the reversals.** "I thought X, then the data said
 otherwise" is the most trustworthy thing in the draft and it stays. The fix is where
 each piece lands, and whether the reader is told the score.
->>>>>>> 942c7c652c16f0ed98a5cce7641bfe433b241ee9
 
 ## Personal and professional communication
 
@@ -1147,6 +1134,4 @@ When editing, preserve the way I think while helping me express it more clearly.
 Before returning a draft, read it once for meaning and once for style. Check that the claims are accurate, the reasoning still follows my original intent, and the language doesn't contain unnecessary polish, repetition, or rhetorical framing.
 
 If the result sounds like a generic AI essay rather than something I could plausibly have written, revisit it.
-
-
 
